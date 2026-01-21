@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVITY_LOG // VITAL_SIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="tracker-logic.js" defer></script>
+</head>
+<body>
+
+    <header id="hero">
+        <div class="glitch-wrapper">
+            <h1 class="glitch" data-text="ACT_LOG">ACT_LOG</h1>
+            <p class="subtitle">PHYSICAL_EXERTION_MONITOR</p>
+        </div>
+        <nav class="terminal-nav">
+            <a href="index.html" class="nav-item"><span class="code">[ << ]</span> RETURN_TO_HUB</a>
+            <a href="dashboard.html" class="nav-item"><span class="code">[ 01 ]</span> VIEW_DASHBOARD</a>
+        </nav>
+    </header>
+
+    <section id="demo">
+        <div class="validation-card">
+            <div class="card-header">
+                <span class="status-dot"></span>
+                <h3>ENTRY_TERMINAL</h3>
+            </div>
+            <form id="trackerForm">
+                <div class="input-group">
+                    <label>ACTIVITY_TYPE</label>
+                    <select id="activity" class="rog-input">
+                        <option value="Running">RUNNING</option>
+                        <option value="Cycling">CYCLING</option>
+                        <option value="Weightlifting">WEIGHTLIFTING</option>
+                        <option value="Swimming">SWIMMING</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>DURATION (MINUTES)</label>
+                    <input type="number" id="duration" placeholder="e.g. 45" required>
+                </div>
+                <button type="submit" class="btn-glitch">LOG_ACTIVITY</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <div class="tag">SEC_LOG // RECENT_ENTRIES</div>
+            <div id="log-container" class="grid">
+                <div class="spec-box empty-msg">
+                    <h4>NO_DATA_FOUND</h4>
+                    <p>Waiting for user input protocol...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrap">
+            <h2 class="cyan-glow">LOGGING_ACTIVE</h2>
+            <p>JMIT_CREATIVE_FINGERS // 2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>

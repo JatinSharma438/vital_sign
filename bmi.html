@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOMETRIC_CALC // VITAL_SIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="bmi-logic.js" defer></script>
+</head>
+<body>
+
+    <header id="hero">
+        <div class="glitch-wrapper">
+            <h1 class="glitch" data-text="BMI_CALC">BMI_CALC</h1>
+            <p class="subtitle">BIOMETRIC_ANALYSIS_MODULE</p>
+        </div>
+        <nav class="terminal-nav">
+            <a href="index.html" class="nav-item"><span class="code">[ << ]</span> RETURN_TO_HUB</a>
+        </nav>
+    </header>
+
+    <section id="demo">
+        <div class="validation-card">
+            <div class="card-header">
+                <span class="status-dot"></span>
+                <h3>BIO_INPUT_SCANNER</h3>
+            </div>
+            <form id="bmiForm" novalidate>
+                <div class="input-group">
+                    <label>WEIGHT (KG)</label>
+                    <input type="number" id="weight" placeholder="e.g. 70" required>
+                    <span class="error-msg">INVALID_WEIGHT_VALUE</span>
+                </div>
+                <div class="input-group">
+                    <label>HEIGHT (CM)</label>
+                    <input type="number" id="height" placeholder="e.g. 175" required>
+                    <span class="error-msg">INVALID_HEIGHT_VALUE</span>
+                </div>
+                <button type="submit" class="btn-glitch">EXECUTE_CALCULATION</button>
+            </form>
+
+            <div id="result-display" class="result-box" style="display: none;">
+                <h4 id="bmi-score" class="cyan-glow">SCORE: 0.0</h4>
+                <p id="bmi-status" class="status-text">STATUS: PENDING</p>
+                <div id="bmi-bar-container">
+                    <div id="bmi-indicator"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <div class="tag">SEC_LOG // REFERENCE_TABLE</div>
+            <div class="grid">
+                <div class="spec-box">
+                    <h4>HEALTHY_RANGE</h4>
+                    <p>18.5 — 24.9 BMI</p>
+                </div>
+                <div class="spec-box" style="border-left-color: #ff0055;">
+                    <h4>WARNING_ZONE</h4>
+                    <p>> 25.0 (OVERWEIGHT)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrap">
+            <h2 class="cyan-glow">COMPUTATION_COMPLETE</h2>
+            <p>JMIT_CREATIVE_FINGERS // APPLIED_SCIENCE // 2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>
